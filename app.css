@@ -1,0 +1,128 @@
+body {
+    font-family: times new roman,serif;
+    background-color: #efedea;
+    margin: 0;
+    padding: 0;
+    color: #453f3f;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+#first-top {
+    background-color: #232222;
+    margin: 0;
+    padding: 0;
+}
+
+#first-top .inner-wraper-top {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#first-top .menu-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-top--item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-top--item {
+    padding-left: 20px;
+}
+
+.menu-top--item::before {
+    content:"\A";
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    background: rgba(216,216,215,.3);
+    display:inline-block;
+    margin-right: 20px;
+}
+
+.menu-top--item-desktop::before {
+    display: none;
+}
+
+
+.menu-top--item a:hover,
+.menu-top--item a:focus {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.menu-top li {
+    list-style: none;
+}
+
+#mainNavbar {
+    background-color: #1a1919;
+}
+
+#mainNavbar .inner-wraper-navbar {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#mainNavbar .navbar-brand {
+    letter-spacing: 0.4em;
+}
+
+#mainNavbar input {
+    background-color: #1a1919
+}
+
+#mainNavbar .navbar-toggler-icon {
+   color: white;
+}
+
+
+.nav-item {
+    margin-left: 20px;
+    letter-spacing: 0.125rem;
+
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: #aeaeae;
+    font-weight: 100;
+}
+
+.header-action-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+@media (max-width: 1025px) {
+    #first-top {
+        display: none;
+    }
+
+    nav .container-fluid {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+}
